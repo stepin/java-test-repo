@@ -13,7 +13,7 @@ public enum UnusedEnum {
     return super.toString() + "; " + usedEnum;
   }
 
-  private void unusedPrivateEnumFunction() {
+  private void unusedPrivateEnumFunction(String s) {
 
   }
 }

@@ -12,6 +12,6 @@ public class Main {
     System.out.println(b);
 
     UsedInnerClass usedInnerClass = new UsedInnerClass();
-    usedInnerClass.mathod2();
+    usedInnerClass.method2();
   }
 }

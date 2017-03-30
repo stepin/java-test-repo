@@ -1,5 +1,7 @@
 package name.stepin;
 
+import com.fasterxml.jackson.core.JsonParser;
+
 /**
  * 5 unused fields, 2 unused methods.
  */
@@ -37,18 +39,22 @@ public class SampleClass implements UsedInterface {
 
   public class UnusedInnerClass {
 
-    public void mathod() {
+    public void method() {
+      System.out.print("Something");
+    }
+
+    private void method3(JsonParser jsonParser) {
       System.out.print("Something");
     }
   }
 
   public static class UsedInnerClass {
 
-    public void mathod() {
+    public void method() {
       System.out.print("Something");
     }
 
-    public void mathod2() {
+    public void method2() {
       System.out.print("Something");
     }
   }
