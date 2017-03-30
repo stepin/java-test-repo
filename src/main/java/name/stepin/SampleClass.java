@@ -4,7 +4,7 @@ package name.stepin;
  * 5 unused fields, 2 unused methods.
  */
 @UsedAnnotation
-public class SampleClass {
+public class SampleClass implements UsedInterface {
 
   private int neverUsedNotAssigned;
   private int neverUsed = 1;
@@ -16,6 +16,8 @@ public class SampleClass {
   public String usedMethod() {
     assignedNotAccessed += 1;
     assignedNotAccessed2 = 5;
+    System.out.println(usedIntf);
+    System.out.println(UsedAnnotation.usedAnn);
     return used;
 
   }
