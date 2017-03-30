@@ -31,6 +31,10 @@ public class SampleClass implements UsedInterface {
     System.out.println(a);
   }
 
+  private void unusedPrivateClassFunction() {
+
+  }
+
   public class UnusedInnerClass {
 
     public void mathod() {

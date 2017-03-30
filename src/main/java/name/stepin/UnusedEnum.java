@@ -7,9 +7,13 @@ public enum UnusedEnum {
 
   private String unusedEnum;
   private String usedEnum = UUID.randomUUID().toString();
-  
+
   @Override
   public String toString() {
     return super.toString() + "; " + usedEnum;
+  }
+
+  private void unusedPrivateEnumFunction() {
+
   }
 }
