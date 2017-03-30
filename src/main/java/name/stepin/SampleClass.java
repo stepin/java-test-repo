@@ -14,6 +14,7 @@ public class SampleClass implements UsedInterface {
   private String notUsedFromMethod = "notUsedFromMethod";
 
   public String usedMethod() {
+    Process p = null;
     assignedNotAccessed += 1;
     assignedNotAccessed2 = 5;
     System.out.println(usedIntf);
