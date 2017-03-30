@@ -2,6 +2,6 @@ package name.stepin;
 
 public interface UsedInterface {
 
-  String unusedIntf = "sadas";
+  SampleClass unusedIntf = new SampleClass();
   String usedIntf = "sacsc";
 }
