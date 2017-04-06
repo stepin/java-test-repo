@@ -43,8 +43,11 @@ public class SampleClass implements UsedInterface {
     return notUsedFromMethod;
   }
 
-  public void usedMethodParameters(String a, String b) {
-    System.out.println(a);
+  public void usedMethodParameters(int a, String b, int c, int d, int e) {
+    System.out.println(++a);
+    System.out.println(d++);
+    System.out.println(e);
+    System.out.println(c>3);
     usedPrivateClassFunction();
   }
 

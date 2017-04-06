@@ -12,7 +12,7 @@ public class Main {
   public static void main(String[] args) {
     SampleClass sampleClass = new SampleClass();
     String s = sampleClass.usedMethod();
-    sampleClass.usedMethodParameters("a", "b");
+    sampleClass.usedMethodParameters(2, "b", 1, 3, 4);
     String b = sampleClass.usedMethod();
     System.out.println(b);
 
