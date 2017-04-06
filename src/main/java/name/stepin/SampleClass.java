@@ -21,6 +21,20 @@ public class SampleClass implements UsedInterface {
     assignedNotAccessed2 = 5;
     System.out.println(usedIntf);
     System.out.println(UsedAnnotation.usedAnn);
+
+    int usedValue = 0;
+    int[] unusedArray = new int[10];
+    int[] usedArray = new int[10];
+    for (int i = 0; i < usedArray.length; i++) {
+      usedArray[i] = usedValue++;
+    }
+
+    int usedCount = 0;
+    while (usedCount++ < 5) {
+      System.out.print("1");
+    }
+    System.out.println();
+
     return used;
 
   }
