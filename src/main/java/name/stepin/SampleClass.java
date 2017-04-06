@@ -31,10 +31,15 @@ public class SampleClass implements UsedInterface {
 
   public void usedMethodParameters(String a, String b) {
     System.out.println(a);
+    usedPrivateClassFunction();
   }
 
   private void unusedPrivateClassFunction() {
 
+  }
+
+  private void usedPrivateClassFunction() {
+    System.out.println(1);
   }
 
   public class UnusedInnerClass {
