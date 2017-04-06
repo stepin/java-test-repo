@@ -1,6 +1,7 @@
 package name.stepin;
 
 import com.fasterxml.jackson.core.JsonParser;
+import java.util.function.Predicate;
 
 /**
  * 5 unused fields, 2 unused methods.
@@ -15,7 +16,7 @@ public class SampleClass implements UsedInterface {
   private String used = "used";
   private String notUsedFromMethod = "notUsedFromMethod";
 
-  public String usedMethod() {
+  public String usedMethod(Predicate<String> filter) {
     Process p = null;
     assignedNotAccessed += 1;
     assignedNotAccessed2 = 5;
@@ -35,6 +36,10 @@ public class SampleClass implements UsedInterface {
     }
     System.out.println();
 
+    if (filter.test("one")) {
+      System.out.println("two");
+    }
+
     return used;
 
   }
@@ -47,7 +52,7 @@ public class SampleClass implements UsedInterface {
     System.out.println(++a);
     System.out.println(d++);
     System.out.println(e);
-    System.out.println(c>3);
+    System.out.println(c > 3);
     usedPrivateClassFunction();
   }
 
